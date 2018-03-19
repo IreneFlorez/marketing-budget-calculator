@@ -1,0 +1,172 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Marketing Budget Calculator</title>
+  <meta name="description" content="budget calculator">
+  <meta name="Irene Florez" content="budget calculator">
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css?v=1.0" />
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!--
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  ->
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="marketing-calculator">
+    <h1>Marketing Budget calculator</h1>
+    Creating a marketing budget just got easier! Use our online budget calculator and take control of your department's spending.
+    <strong>Directions: </strong>Enter estimated amounts in all of the fields that apply to you.
+    See how much you could save if you adjust your spending for maximum ROI.
+    <div class="grid-cell size-8of12--md">
+        <div id="calculator">
+          <div id="simple-marketing-calculator" class="grid mg-bottom-sm calculator__container">
+            <div class="grid-cell calculator__gray-bg pd-sm">
+              <div class = "calculator__gray-bg">
+
+                  <form>
+
+                    <!-- Calculate the total value of new customers.
+                    Number of new customers * LTV = Total value of new customers -->
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>Number of new customers:</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="numberNewCustomers" id="numberNewCustomers">
+                    </div>
+
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>LTV: Lifetime value of a customer</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="lifetimeValueOfCustomer" id="lifetimeValueOfCustomer">
+                    </div>
+
+                    <!-- Calculate the value of a website visitor.
+                    New revenue generated / Number of website visitors = Value of each visitor -->
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>New revenue generated</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="newRevenueGenerated" id="newRevenueGenerated">
+                    </div>
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>Number of website visitors</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="numWebVisitors" id="numWebVisitors">
+                    </div>
+
+                    <!-- Calculate the lifetime value of a customer (LTV).
+                    FORMULA: Average sale price per period * Average lifetime of customer  = Lifetime value of a customer -->
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>Average sale price per period</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="avgSalePrice" id="avgSalePrice">
+                    </div>
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>Average lifetime of customer</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="avgLifetimeOfCustomer" id="avgLifetimeOfCustomer">
+                    </div>
+                    <!-- Calculate the visit to lead conversion rate.
+                    What percentage of your visitors become leads over a year?
+                    FORMULA: Number of leads / Number of visitors (over the same period) -->
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>Number of leads</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="Number of leads" id="numberLeads">
+                    </div>
+
+                    <!-- Calculate the lead to customer conversion rate.
+                    What percentage of your leads turn into customers over a year?
+                    FORMULA: Number of customers / Number of leads (over the same period) -->
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>Number of customers</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="numCustomers" id="numCustomers">
+                    </div>
+
+                    <div class="mg-bottom">
+                      <br>
+                      <br>
+                </form>
+
+                <button id="calculate" class="button">calculate</button>
+                </div>
+                <div id= "calculation-results">
+                  <p class="Amount">
+                    <div data-format="$" class="form-input data-format-left">
+                      <label id="total-value-new-customers"><span data>Total value of new customers:</span></label>
+                      <label id="value-website-visitor"><span data>Value of a website visitor:</span></label>
+                      <label id="lifetime-value-customer"><span data>Lifetime value of a customer:(LTV)</span></label>
+                      <label id="lead-conversion-rate"><span data>Lead conversion rate:</span></label>
+                      <label id="lead-customer-conversion-rate"><span data>Lead to customer conversion rate:</span></label>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+              <br>
+              <input type=text onkeypress="return onlyNumbers(event)" name=balance size=10> <span class="esc-error" id="balanceError"></span></p>
+              <p>What is the interest rate?</p>
+                <br>
+              <input type=text onkeypress="return onlyNumbers(event)" name=rate size=5> <span class="esc-error" id="rateError"></span></p>
+              <p>How many years?<br>
+              <input type=text onkeypress="return onlyNumbers(event)" name=years size=5> <span class="esc-error" id="yearsError"></span></p>
+              <input type=button onClick="return mySavings()" value=Calculate>  <input type=button onClick="return mySavingsReset()" value=Reset>
+              </form>
+              <small>* Numbers and decimal points only.</small>
+              <p class="esc-finalbalance" id="finalBalance"> </p>
+              </div> -->
+
+<!--
+              <label data-v-ad86debe>
+                <form action="index.html" method="post">
+                  <input type="text" id="email" placeholder="example@email.com"/>
+                  <input type="password" id="password" placeholder="password"/>
+                </form> -->
+
+  <script src="js/script.js" async></script>
+
+  </body>
+  </html>

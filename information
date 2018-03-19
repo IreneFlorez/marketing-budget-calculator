@@ -1,0 +1,67 @@
+https://nectafy.com/calculate-value-website-visitors/
+CSS sample: https://medium.mybridge.co/22-amazing-open-source-react-projects-cb8230ec719f
+Design example: https://www.betterment.com/retirement/
+https://www.betterment.com/resources/inside-betterment/engineering/how-we-built-retireguide-in-r-and-javascript/
+calculator: http://www.youcandealwithit.com/borrowers/calculators-and-resources/calculators/interest-savings-calculator.shtml
+Budgeting: https://hbr.org/2015/07/the-right-way-to-prepare-your-budget
+Budget Decisions: https://www.mckinsey.com/business-functions/marketing-and-sales/our-insights/how-to-reallocate-marketing-budgets-to-drive-growth
+
+To follow along with your numbers, you’ll need to pick an amount of time (like one year), and gather these numbers for that time span:
+
+Visits
+Leads
+Sales
+Average sale price
+Average lifetime of a customer
+1. Calculate the lifetime value of a customer (LTV).
+If you sign a new customer, how much revenue will that generate for your company? You’ll need to factor in sale price, how often they repeat, and how long they hang around.
+Keep in mind that our formula below is a simple calculation that will give you the amount of revenue generated for the average lifetime of a customer (the end of the life being defined by the customer no longer using your services, not death).
+
+FORMULA: Average sale price per period * Average lifetime of customer  = Lifetime value of a customer
+EXAMPLE: $150 per month * 36 months = $5,400 LTV
+
+For Timely, the average sale price is $150 per month for an unlimited amount of users.
+An average customer sticks around for 36 months.
+Now, this number should change your mindset a bit: Timely is no longer selling to a $150 customer, they’re selling to a $5,400 customer.
+
+2. Calculate the total value of new customers.
+How many new customers did you acquire over the year? In sticking with the one-year timeframe, we now need to dig up the number of new customers generated this year.
+From there, it’s simple:
+FORMULA: Number of new customers * LTV = Total value of new customers
+EXAMPLE: 200 * $5,400 = $1,080,000 new revenue generated
+Because Timely signed up 200 new clients during the year, they’ve created $1.08 million in new lifetime value. Now we’re talking.
+
+3. Calculate the value of a website visitor.
+How much is each website visitor worth from that pool of customers? Pull out the number of website visitors you received this year.
+Since we know the amount of new revenue we generated during this time period, we can easily solve for the value of website visitors:
+
+FORMULA: New revenue generated / Number of website visitors = Value of each visitor
+EXAMPLE: $1,080,000 / 325,000 = $3.32 visitor value
+With 325,000 visits to the website during the full year, Timely now knows that each visitor is worth $3.32 in revenue.
+Now that is good, just like I said at the beginning of the article, but it’s good in a numerical sense.
+
+But, here’s the good stuff.
+That number we just came to above is really important.
+With that number (and I recommend testing it out over different time periods and sources), you understand exactly how much value you’ll bring to the company if you increase web visits by, say, 20%.
+But there’s some additional information you should be tracking if you want to improve that visitor value from $3.32 up to $4.
+Couple the increase in visits with the increase in value per visitor, and you’re talking about a massive bonus and promotion.
+Here is how you can work on increasing the value of each visitor (now that you know the number):
+
+Calculate the visit to lead conversion rate.
+What percentage of your visitors become leads over a year?
+
+FORMULA: Number of leads / Number of visitors (over the same period)
+
+EXAMPLE: 11,375 / 325,000 = 3.5% visitor to lead conversion rate
+
+Timely receives 3.5 leads for every 100 visitors to its website.
+
+Calculate the lead to customer conversion rate.
+What percentage of your leads turn into customers over a year? The next step in the funnel is to move leads to sales.
+This conversion rate tells you how well your team turns leads into customers.
+Try out some tests to increase your conversion rates, and stick with the ones that work.
+When your conversion rates go up, the value of each lead goes up, and so does the value of each visitor.
+FORMULA: Number of customers / Number of leads (over the same period)
+EXAMPLE: 200 / 11,375 = 1.75% lead to sale conversion rate
+
+Timely gains, on average, 1.75 customers for every 100 leads it receives through the website.

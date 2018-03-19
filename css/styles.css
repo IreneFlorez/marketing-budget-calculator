@@ -1,0 +1,76 @@
+body {
+      font-family: Calibre-Regular,Arial,sans-serif;
+}
+
+.mg-bottom{
+  margin-bottom: 1.5rem;
+}
+
+.button{
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #3139f2;
+  font-size: .88888889rem;
+  line-height: 1.6875;
+  letter-spacing: .05555556rem;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Calibre-Semibold,Arial,sans-serif;
+  margin: 0;
+  overflow: visible;
+  padding: .77777778rem 2.27777778rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #fff;
+  /* -webkit-transition: opacity {.15s ease-in-out,background-color .2s ease-in-out};
+  transition: opacity {.15s ease-in-out,background-color .2s ease-in-out}; */
+}
+
+.grid {
+  flex-flow: row wrap;
+      -webkit-box-orient: horizontal;
+      flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mg-bottom-sm {
+}
+
+.calculator__container {
+  border: 1px solid #cfcfd4;
+}
+
+.grid-cell {
+  -webkit-box-sizing: inherit;
+box-sizing: inherit;
+-ms-flex-preferred-size: 100%;
+flex-basis: 100%;
+min-width: 0;
+}
+.calculator__gray-bg {
+  background: #f0f0f2;
+}
+.pd-sm {
+      padding: 1.11111111rem;
+}
+
+.form-input{
+  position: relative;
+}
+
+.data-format-left{
+
+}
+
+.data-format-right{
+
+}

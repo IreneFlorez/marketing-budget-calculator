@@ -43,23 +43,7 @@
 
                     <!-- Calculate the total value of new customers.
                     Number of new customers * LTV = Total value of new customers -->
-                    <div data-format="$" class="form-input data-format-left">
-                      <label>
-                      <span data>Number of new customers:</span>
-                      </label>
-                    </div>
-                    <div data-format="$" class="form-input data-format-right">
-                      <input data name="numberNewCustomers" id="numberNewCustomers">
-                    </div>
 
-                    <div data-format="$" class="form-input data-format-left">
-                      <label>
-                      <span data>LTV: Lifetime value of a customer</span>
-                      </label>
-                    </div>
-                    <div data-format="$" class="form-input data-format-right">
-                      <input data name="lifetimeValueOfCustomer" id="lifetimeValueOfCustomer">
-                    </div>
 
                     <!-- Calculate the value of a website visitor.
                     New revenue generated / Number of website visitors = Value of each visitor -->
@@ -80,6 +64,8 @@
                       <input data name="numWebVisitors" id="numWebVisitors">
                     </div>
 
+
+
                     <!-- Calculate the lifetime value of a customer (LTV).
                     FORMULA: Average sale price per period * Average lifetime of customer  = Lifetime value of a customer -->
                     <div data-format="$" class="form-input data-format-left">
@@ -98,6 +84,23 @@
                     <div data-format="$" class="form-input data-format-right">
                       <input data name="avgLifetimeOfCustomer" id="avgLifetimeOfCustomer">
                     </div>
+
+
+
+
+                    <div data-format="$" class="form-input data-format-left">
+                      <label>
+                      <span data>Number of new customers:</span>
+                      </label>
+                    </div>
+                    <div data-format="$" class="form-input data-format-right">
+                      <input data name="numberNewCustomers" id="numberNewCustomers">
+                    </div>
+
+
+
+
+
                     <!-- Calculate the visit to lead conversion rate.
                     What percentage of your visitors become leads over a year?
                     FORMULA: Number of leads / Number of visitors (over the same period) -->
@@ -109,6 +112,10 @@
                     <div data-format="$" class="form-input data-format-right">
                       <input data name="Number of leads" id="numberLeads">
                     </div>
+
+
+
+
 
                     <!-- Calculate the lead to customer conversion rate.
                     What percentage of your leads turn into customers over a year?
@@ -132,11 +139,20 @@
                 <div id= "calculation-results">
                   <p class="Amount">
                     <div data-format="$" class="form-input data-format-left">
-                      <label id="total-value-new-customers"><span data>Total value of new customers:</span></label>
-                      <label id="value-website-visitor"><span data>Value of a website visitor:</span></label>
-                      <label id="lifetime-value-customer"><span data>Lifetime value of a customer:(LTV)</span></label>
-                      <label id="lead-conversion-rate"><span data>Lead conversion rate:</span></label>
-                      <label id="lead-customer-conversion-rate"><span data>Lead to customer conversion rate:</span></label>
+
+                      <label id="answer-visitor-value"><span data>Value of a website visitor:</span></label>
+                      <br>
+
+                      <label id="answerLTV"><span data>Lifetime value of a customer:(LTV)</span></label>
+                      <br>
+
+                      <label id="answer-total-value-new-customers"><span data>Total value of new customers:</span></label>
+                      <br>
+
+                      <label id="answer-lead-conversion-rate"><span data>Lead conversion rate:</span></label>
+                      <br>
+
+                      <label id="answer-lead-customer-conversion-rate"><span data>Lead to customer conversion rate:</span></label>
                     </div>
               </div>
             </div>

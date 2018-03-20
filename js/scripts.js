@@ -1,14 +1,14 @@
 //http://eagarcia.com/live/calculator/index.html
 
 // CALCULATIONS ---------------------------->
-// Calculate the total value of new customers.
-// Number of new customers * LTV = Total value of new customers
-//
 // Calculate the value of a website visitor.
 // New revenue generated / Number of website visitors = Value of each visitor
 //
 // Calculate the lifetime value of a customer (LTV).
-// FORMULA: Average sale price per period * Average lifetime of customer  = Lifetime value of a customer
+// FORMULA: Average sale price per period * Average lifetime of customer  = LTV (Lifetime value of a customer)
+//
+// Calculate the total value of new customers.
+// Number of new customers * LTV  = Total value of new customers
 //
 // Calculate the visit to lead conversion rate.
 // What percentage of your visitors become leads over a year?
@@ -43,40 +43,54 @@ $( document ).ready( function () {
   var valueHolder = "";
 
     $("#submit").click( function (){
-      var emailText = $("#numberNewCustomers").val();
 
-Variables:
-                 $("#numberNewCustomers").val();
-                 $("#lifetimeValueOfCustomer").val();
-                 $("#newRevenueGenerated").val();
-                 $("#numWebVisitors").val();
-                 $("#avgSalePrice").val();
-                 $("#avgLifetimeOfCustomer").val();
-                 $("#numberLeads").val();
-                 $("#numCustomers").val();
+
+
+      var newRevenueGenerated = $("#newRevenueGenerated").val();
+      var numWebVisitors = $("#numWebVisitors").val();
+      #"answer-visitor-value"
+
+      var avgSalePrice = $("#avgSalePrice").val();
+      var avgLifetimeOfCustomer = $("#avgLifetimeOfCustomer").val();
+      //LTV answerLifetimeValueOfCustomer = $("#answerLTV").val();
+
+      var numberNewCustomers = $("#numberNewCustomers").val();
+      *//LTV var lifetimeValueOfCustomer = $("#lifetimeValueOfCustomer").val();
+      var answer-total-value-new-customers
+
+      #numberLeads / #numWebVisitors //(over the same period)
+      var answer-lead-conversion-rate
+
+      #numberNewCustomers / #numberLeads //(over the same period)
+      var answer-lead-customer-conversion-rate
+
+
+
+
+
+      var answerVisitorValue
+      var $("#answerLTV").val();
+      var answer-total-value-new-customers
+      var answer-lead-conversion-rate
+      var answer-lead-customer-conversion-rate
+
+      var numberLeads = $("#numberLeads").val();
+      var numberCustomers = $("#numCustomers").val();
+
+      *var numberCustomers = $("#numCustomers").val();
+      *var numberLeads = $("#numberLeads").val();
+
+
 
 Answers:
-                 "total-value-new-customers"
+
+//LTV answerLifetimeValueOfCustomer = $("#answerlifetimeValueOfCustomer").val();
                  "value-website-visitor"
-                 "lifetime-value-customer"
+                 $("total-value-new-customers").append(containerCopy);
+                 "answerLifetimeValueOfCustomer"
                  "lead-conversion-rate"
-                 "lead-customer-conversion-rate"
-
-
-
-
+                 "answerLeadToCustomerConversionRate"
 });
-
-
-
-
-
-
-
-
-
-
-
 
 
 

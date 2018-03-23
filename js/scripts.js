@@ -1,126 +1,48 @@
 //http://eagarcia.com/live/calculator/index.html
 
-// CALCULATIONS ---------------------------->
-// Calculate the value of a website visitor.
-// New revenue generated / Number of website visitors = Value of each visitor
-//
-// Calculate the lifetime value of a customer (LTV).
-// FORMULA: Average sale price per period * Average lifetime of customer  = LTV (Lifetime value of a customer)
-//
-// Calculate the total value of new customers.
-// Number of new customers * LTV  = Total value of new customers
-//
-// Calculate the visit to lead conversion rate.
-// What percentage of your visitors become leads over a year?
-// FORMULA: Number of leads / Number of visitors (over the same period)
-//
-// Calculate the lead to customer conversion rate.
-// What percentage of your leads turn into customers over a year?
-// FORMULA: Number of customers / Number of leads (over the same period)
-
-// $(document).on("click", ".keys span:contains(8)", function () {
-//   display += 8;
-//   $(".screen").html(display);
-// });
-
-// $( document ).ready( function () {
-//
-//   var textfield = $("#text");
-//
-//   textfield.keypress(function (event) {
-//
-//     if (event.which == 13) {
-//       window.location.assign("http://www.google.com/search?q=" + textfield.val());
-//     }
-//   });
-//
-// });
-
-
-
 $( document ).ready( function () {
-  var display = "";
-  var valueHolder = "";
+  var answerVisitorValue = "";
+  var answerLTV = "";
+  var answerTotalValueNewCustomers = "";
+  var leadConversionRate = "";
+  var answerLeadCustomerConversionRate = "";
 
     $("#submit").click( function (){
-
-
-
+      // Calculate the value of a website visitor.
+      // New revenue generated / Number of website visitors = Value of each visitor
       var newRevenueGenerated = $("#newRevenueGenerated").val();
       var numWebVisitors = $("#numWebVisitors").val();
-      #"answer-visitor-value"
+      answerVisitorValue = newRevenueGenerated / numWebVisitors;
+      $("#answerVisitorValue").append(answerVisitorValue);
 
+      // Calculate the lifetime value of a customer (LTV).
+      // FORMULA: Average sale price per period * Average lifetime of customer  = LTV (Lifetime value of a customer)
       var avgSalePrice = $("#avgSalePrice").val();
       var avgLifetimeOfCustomer = $("#avgLifetimeOfCustomer").val();
-      //LTV answerLifetimeValueOfCustomer = $("#answerLTV").val();
+      answerLTV = avgSalePrice * avgLifetimeOfCustomer;
+      $("#answerLTV").append(answerLTV);
 
+      // Calculate the total value of new customers.
+      // Number of new customers * LTV  = Total value of new customers
       var numberNewCustomers = $("#numberNewCustomers").val();
-      *//LTV var lifetimeValueOfCustomer = $("#lifetimeValueOfCustomer").val();
-      var answer-total-value-new-customers
+      answerTotalValueNewCustomers = numberNewCustomers * answerLTV; //check this
+      $("#answerTotalValueNewCustomers").append(answerTotalValueNewCustomers);
 
-      #numberLeads / #numWebVisitors //(over the same period)
-      var answer-lead-conversion-rate
-
-      #numberNewCustomers / #numberLeads //(over the same period)
-      var answer-lead-customer-conversion-rate
-
-
-
-
-
-      var answerVisitorValue
-      var $("#answerLTV").val();
-      var answer-total-value-new-customers
-      var answer-lead-conversion-rate
-      var answer-lead-customer-conversion-rate
-
+      // Calculate the visit to lead conversion rate.
+      // What percentage of your visitors become leads over a year?
+      // FORMULA: Number of leads / Number of visitors (over the same period)
       var numberLeads = $("#numberLeads").val();
+      $("#numWebVisitors").val();
+      var leadConversionRate = numberLeads / numWebVisitors;
+      $("#leadConversionRate").append(leadConversionRate);
+
+      // Calculate the lead to customer conversion rate.
+      // What percentage of your leads turn into customers over a year?
+      // FORMULA: Number of customers / Number of leads (over the same period)
       var numberCustomers = $("#numCustomers").val();
-
-      *var numberCustomers = $("#numCustomers").val();
-      *var numberLeads = $("#numberLeads").val();
-
+      answerLeadCustomerConversionRate = $("#numberCustomers").val() / $("#numberLeads").val(); //make a grid
+      $("#answerLeadCustomerConversionRate").append(answerLeadCustomerConversionRate);
 
 
-Answers:
-
-//LTV answerLifetimeValueOfCustomer = $("#answerlifetimeValueOfCustomer").val();
-                 "value-website-visitor"
-                 $("total-value-new-customers").append(containerCopy);
-                 "answerLifetimeValueOfCustomer"
-                 "lead-conversion-rate"
-                 "answerLeadToCustomerConversionRate"
 });
-
-
-
-
-// $( document ).ready( function () {
-//     $("#submit").click( function (){
-//       var emailText = $("#numberNewCustomers").val();
-//      $("#error").css("visibility", "visible");
-
-//       if (emailText == "hello@gmail.com") {
-//
-//         if (passwordText == "1234"){
-//           var message = "That is the right password";
-//
-//           $("#error").html(message);
-//         } else {
-//           var errorMessage = "That is not the right password";
-//
-//           $("#error").html(errorMessage);
-//         }
-//       } else {
-//           var errorMessage = "No user exists with email " + emailText + " exists.";
-//
-//           $("#error").html("<p>" + errorMessage+ "</p>");
-//       }
-//     });
-// });
-//
-// function validateEmail(email) {
-//     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return re.test(String(email).toLowerCase());
-// }
-//source: Mevius: https://stackoverflow.com/users/3518452/rnevius See the question at: https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+});

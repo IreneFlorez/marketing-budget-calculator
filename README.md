@@ -1,6 +1,11 @@
 # htmlProjectTemplate
 A basic JS Calculator
 
+TODO:
+* Clear out data before reloading
+* Troubleshoot Lead to customer conversion rate answer
+* Add a grid to specify the time period from which the data points are culled
+
 
 Problem
 It can be daunting to work through large files of data on users, webpages, web traffic, purchases, forms etc. and create a working marketing budget.

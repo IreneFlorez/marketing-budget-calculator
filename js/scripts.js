@@ -1,4 +1,5 @@
 //http://eagarcia.com/live/calculator/index.html
+//https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-10.php
 
 $( document ).ready( function () {
   var answerVisitorValue = "";
@@ -45,4 +46,12 @@ $( document ).ready( function () {
 
 
 });
+
+function calculate() {
+        var myBox1 = document.getElementById('box1').value;
+        var myBox2 = document.getElementById('box2').value;
+        var result = document.getElementById('result');
+        var myResult = myBox1 * myBox2;
+          document.getElementById('result').value = myResult;
+    }
 });
